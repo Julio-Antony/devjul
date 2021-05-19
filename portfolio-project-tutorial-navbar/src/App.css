@@ -1,24 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-body {
-  font-family: "Lobster", cursive;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba (255, 255, 255, 0);
+  --primary-dark: rgba(255,255,255, 0);
 }
 
-/*************************************Navbar**************************************************/
+body {
+font-family: "Roboto Condesed" sans-serif;
+}
+
+
+/************************ NAVBAR *********************************/
 .logo {
   width: 16.25rem;
 }
 
-/********************MenuLinks**************************/
-
+/*----- MENU LINKS --------*/
 nav a.nav-link {
-  font-size: 0.8rem;
+  font-size: .8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
@@ -40,8 +40,7 @@ nav ul li {
   height: 6rem !important;
 }
 
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
