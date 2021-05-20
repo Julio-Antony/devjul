@@ -1,18 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-body {
-  font-family: "Lobster", cursive !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
+  --primary-dark: rgba(255,255,255, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
-  --primary-dark: rgba (255, 255, 255, 0);
 }
 
-/*************************************Navbar**************************************************/
+body {
+font-family: "Roboto Condesed", sans-serif;
+}
+
+
+/************************ NAVBAR *********************************/
+
 nav {
   z-index: 2;
 }
@@ -21,10 +23,9 @@ nav {
   width: 16.25rem;
 }
 
-/********************MenuLinks**************************/
-
+/*----- MENU LINKS --------*/
 nav a.nav-link {
-  font-size: 0.8rem;
+  font-size: .8rem;
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
@@ -34,7 +35,7 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
@@ -46,8 +47,13 @@ nav ul li {
   height: 6rem !important;
 }
 
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
+@media(max-width: 768px) {
+ .navbar-brand {
+   width: 7rem;
+ }
+}
+
+.navbar-nav > li > a.active,  .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -55,16 +61,14 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
-@media (max-width: 768px) {
-  .navbar-brand {
-    width: 7rem;
-  }
-}
-/*************************************Header**************************************************/
+
+/************************ HEADER *********************************/
+
 .header-wraper {
   position: relative;
   background: url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   height: 90vh;
 }
 
@@ -79,6 +83,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
   z-index: 1;
 }
 
@@ -87,40 +92,40 @@ nav ul li {
   text-transform: uppercase;
 }
 
-/******************Typed Text*********************/
-
+/*-------- TYPED TEXT ---------------*/
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
 }
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
   }
-
   .typed-text {
     font-size: 1.3rem !important;
+
   }
 }
 
-/******************Header Main Offer Button*********************/
-
+/*-------- HEADER MAIN OFFER BUTTON ---------------*/
 .btn-main-offer {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition:  .2s ease-in-out;
 }
 
-/******************Particles JS*********************/
+/*-------- PARTICLES JS ---------------*/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -128,7 +133,7 @@ nav ul li {
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
   .particles-canvas {
     display: none;
   }
