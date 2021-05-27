@@ -5,7 +5,7 @@ import { faDesktop, faFileCode} from "@fortawesome/free-solid-svg-icons";
 
 const Service = () => {
     return (
-        <div className="services">
+        <div id="services" className="services">
             <div className="container py-5">
                 <h1 className="mb-5">My Services</h1>
                 <div className="row">
